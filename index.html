@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href="./style.css">
+  <title>Children's Bible</title>
+  <style>
+  body{
+    text-align: center;
+    background-color:beige;
+  }
+  img {
+            width: 500px; /* Adjust the width to make the image fill its container */
+            height: auto; /* Maintain the aspect ratio */
+            display: block; /* Remove extra space below the image */
+            margin: auto; /* Center the image */
+            border-radius: 60px;
+        }
+</style>
+
+ 
+<body>
+   <h1>CHILDREN'S BIBLE</h1> 
+   <h2>By Jesse Nii</h2>
+   <p>
+    <img src = "images.jpeg" alt ="kidspicture">
+   </p>
+
+   <h3 id="verse" onmouseover="changeText()"> 
+    "John 3:16"
+   </h3>
+   <script>
+    function changeText() {
+            var dynamicElement = document.getElementById("verse");
+            dynamicElement.textContent = "John 3:16: For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life.";    
+    }
+  </script>
+
+
+</body>
+</head>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Children's Bible</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CHILDREN'S BIBLE</h1>
+        <h2>Hover on verse to reveal</h2>
+        <div class="image-container">
+            <img src="images.jpeg" alt="kidspicture">
+        </div>
+        <h3 id="verse" onmouseover="changeText()" onmouseout="resetText()">
+            "John 3:16"
+        </h3>
+    </div>
+    <style>
+        body {
+    text-align: center;
+    background-color: beige;
+}
+    </style>
+
+    <script>
+        function changeText() {
+            var dynamicElement = document.getElementById("verse");
+            dynamicElement.textContent = "John 3:16: For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life.";
+        }
+
+        function resetText() {
+            var dynamicElement = document.getElementById("verse");
+            dynamicElement.textContent = "John 3:16";
+        }
+    </script>
+</body>
+
+</html>
